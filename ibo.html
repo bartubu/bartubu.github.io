@@ -19,36 +19,6 @@
   </button>
 
   <script>
-    const imageSources = [
-      "ibosit/ibosit (1).png",
-      "ibosit/ibosit (2).png",
-      "ibosit/ibosit (2).jpg",
-      "ibosit/ibosit (3).png",
-      "ibosit/ibosit (4).png",
-      "ibosit/ibosit (5).png",
-      "ibosit/ibosit (6).png",
-      "ibosit/ibosit (7).png",
-      "ibosit/ibosit (8).png",
-      "ibosit/ibosit (9).png",
-      "ibosit/ibosit (10).png",
-      "ibosit/ibosit (11).png"
-    ];
-
-    const slideInterval = 4000;
-    let currentImageIndex = 0;
-    let slideTimeout;
-
-    function updateSlide() {
-      const imageUrl = imageSources[currentImageIndex];
-      document.querySelector("html").style.backgroundImage = `url(${imageUrl})`;
-
-      currentImageIndex++;
-      if (currentImageIndex >= imageSources.length) {
-        currentImageIndex = 0;
-      }
-
-      slideTimeout = setTimeout(updateSlide, slideInterval);
-    }
 
     document.querySelector('button.slide').addEventListener('click', function() {
       this.classList.add('active');
