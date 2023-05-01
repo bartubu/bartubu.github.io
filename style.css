@@ -1,0 +1,64 @@
+body {
+  background: #000405;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000405;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 900;
+  overflow: hidden;
+  transition: all 1s ease-in-out;
+}
+
+h1.fancy {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 8vw;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1;
+  transition: all 1s ease-in-out;
+  background-image: url("C:\\Users\\emire\\Desktop\\ibosit\\ib.jpg");
+  background-size: cover;
+  background-position: center;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+button.centered.slide {
+  position: absolute;
+  bottom: 50px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 200px;
+  height: 50px;
+  border: none;
+  background: transparent;
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: bottom 1s ease-in-out;
+}
+
+button.centered.slide.active {
+  bottom: 20px;
+}
+
+body.show-image {
+  background: url("C:\\Users\\emire\\Desktop\\ibosit\\ib.jpg") no-repeat center center fixed;
+  background-size: cover;
+  justify-content: flex-start;
+}
+
+body.show-image h1 {
+  opacity: 0;
+  transform: translateY(-50px);
+}
+
+body.show-image button {
+  opacity: 0;
+  transform: translateY(50px);
+}
